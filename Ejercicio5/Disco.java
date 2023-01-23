@@ -1,7 +1,7 @@
 package Ejercicio5;
 
 public class Disco {
-    private String codigo = "LIBRE";
+    private String codigo;
     private String autor;
     private String titulo;
     private String genero;
@@ -55,4 +55,8 @@ public class Disco {
         cadena += "\n------------------------------------------";
         return cadena;
         }
+    @Override
+    public boolean equals(Object d) {
+        return (this.codigo).equals(((Disco)d).getCodigo());
+    }
 }
