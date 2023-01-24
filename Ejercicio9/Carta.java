@@ -1,6 +1,6 @@
-package Ejercicio8;
+package Ejercicio9;
 
-public class Carta {
+public class Carta implements Comparable<Carta> {
     private String[] num = {"as","2","3","4","5","6","7","sota","caballo","rey"};
     private String[] pa = {"bastos","copas","espadas","oros"};
 
@@ -37,6 +37,16 @@ public class Carta {
         }
         return true;
 
+    }
+
+    @Override
+    public int compareTo(Carta c) {
+        if (palo.equals(c.getPalo())) {
+            return numero.compareTo(c.getNumero());
+        }
+        else {
+            return palo.compareTo(c.getPalo());
+        }
     }
 
     @Override
