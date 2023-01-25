@@ -27,7 +27,7 @@ public class Carrito {
         String texto = "";
         texto += "Contenido del carrito\n===============\n";
         for (Elemento e : elementos) {
-        texto += elementos+"\n";
+        texto += e+"\n";
         }
         return texto;
     }
