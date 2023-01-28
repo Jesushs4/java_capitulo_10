@@ -28,19 +28,6 @@ public class Articulo {
         this.cantidad = cantidad;
     }
 
-    @Override
-    public boolean equals(Object a) {
-        if (a==null) {
-            return false;
-        }
-        if (this.getClass()!=a.getClass()) {
-            return false;
-        }
-        if (this.nombre.equals(((Articulo) a).nombre)) {
-            return false;
-        }
-        return true;
-    }
 
     @Override
     public String toString() {
